@@ -1,4 +1,4 @@
 class AnswerSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :description 
   belongs_to :card, serializer: CardSerializer
 end
