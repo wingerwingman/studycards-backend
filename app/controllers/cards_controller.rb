@@ -1,3 +1,4 @@
+require 'pry'
 class CardsController < ApplicationController
   before_action :set_card, only: [:show, :update, :destroy]
 
@@ -15,6 +16,7 @@ class CardsController < ApplicationController
 
   # POST /cards
   def create
+    # binding.pry
     @card = Card.new(card_params)
 
     if @card.save
