@@ -1,5 +1,4 @@
 class CardSerializer < ActiveModel::Serializer
-  attributes :id, :question, :code 
-  has_one :answer, serializer: AnswerSerializer
+  attributes :id, :question, :code, :answer
   belongs_to :category, serializer: CategorySerializer
 end

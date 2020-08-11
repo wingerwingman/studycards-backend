@@ -3,6 +3,7 @@ class CreateCards < ActiveRecord::Migration[6.0]
     create_table :cards do |t|
       t.string :question
       t.string :code
+      t.string :answer
       
 
       t.timestamps
