@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
   # POST /categories
   def create
     @category = Category.new(category_params)
-
+    # binding.pry
     if @category.save
       render json: @category, status: :created, location: @category
     else
