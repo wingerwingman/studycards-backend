@@ -3,11 +3,6 @@ Rails.application.routes.draw do
   resources :categories do 
     resources :cards
   end
-  resources :categories do 
-    resources :cards do
-      resources :answers
-    end
-  end
 
   resources :answers
   resources :cards
